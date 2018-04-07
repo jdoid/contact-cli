@@ -1,6 +1,4 @@
 import json
-from pprint import pprint
-
 
 contact_directory = "data/directory.json"
 
@@ -30,7 +28,10 @@ def main():
 
     # print list as there may be multiple matches
     for entry in name:
-        pprint(entry)
+        print()
+        for k,v in entry.items():
+            print(k, ': \t', v)
+        print()
 
 if __name__ == '__main__':
     main()
