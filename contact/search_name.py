@@ -2,6 +2,8 @@ import json
 from pprint import pprint
 
 
+contact_directory = "data/directory.json"
+
 def prompt():
     name = input('Enter first or last name to search (case sensitive) : ')
     return name
@@ -12,7 +14,7 @@ def main():
 
     person = prompt()
 
-    with open('data/test_dir.json') as f:
+    with open(contact_directory) as f:
         data = json.load(f)
 
     f.close()

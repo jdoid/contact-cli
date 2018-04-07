@@ -1,2 +1,2 @@
 include README.md
-include data/test_dir.json
+include data/directory.json
