@@ -4,7 +4,7 @@ import getopt
 def main():
     input_csv_file = ''
 
-    # check for usage
+    # check for command line option of new csv file
     total_args = len(sys.argv)
 
     if total_args > 1:
