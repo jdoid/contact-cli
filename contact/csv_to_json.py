@@ -3,26 +3,28 @@ import json
 import os
 
 
-def main():
-    csvfile = './directory.csv'
-    directory = os.path.splitext(csvfile)[0]
-    jsonfile = directory + '.json'
 
-    with open(directory + '.csv') as f:
-        reader = csv.DictReader(f)
-        rows = list(reader)
+class CreateJson(object):
+    def __init__(self, file):
+        self.csv_file = file
 
-    # print(rows)
+    def create_json(self):
+        # csvfile = './directory.csv'
+        directory = os.path.splitext(self.csv_file)[0]
+        jsonfile = directory + '.json'
 
-    json_file_write = open(jsonfile, 'w')
+        with open(directory + '.csv') as f:
+            reader = csv.DictReader(f)
+            rows = list(reader)
 
-    json.dump(
-        rows,
-        json_file_write,
-        indent = 2    
-    )   
+        # print(rows)
 
-    json_file_write.close()
+        json_file_write = open(jsonfile, 'w')
 
-if __name__ == '__main__':
-    main()
+        json.dump(
+            rows,
+            json_file_write,
+            indent = 2    
+        )   
+
+        json_file_write.close()
