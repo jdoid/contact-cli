@@ -1,6 +1,6 @@
 import json
 
-contact_directory = "data/directory.json"
+contact_directory = "../data/directory.json"
 
 def prompt():
     name = input('Enter first or last name to search (case sensitive) : ')
@@ -18,12 +18,12 @@ def main():
     f.close()
 
     # get full dictionary for all last name in var person
-    name = [item for item in data["peoples"]
+    name = [item for item in data["people"]
         if item[last_name] == person ]
     
     # or check for person in the first name field
     if not name:
-        name = [item for item in data["peoples"]
+        name = [item for item in data["people"]
             if person in item[first_name] ]
 
     # print list as there may be multiple matches

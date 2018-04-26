@@ -1,6 +1,6 @@
 import sys
 import getopt
-from .csv_to_json import CreateJson
+from csv_to_json import CreateJson
 import search_name as search
 
 def main():
@@ -20,14 +20,13 @@ def main():
         for o, a in myopts:
             if o == '-i':
                 input_csv_file=a
-                print(input_csv_file)
+                #print(input_csv_file)
 
     if input_csv_file:
-        new_directory = CreateJson('./directory.csv')
+        new_directory = CreateJson(input_csv_file)
         new_directory.create_json()
 
 
 if __name__ == '__main__':
     main()
     search.main()
-    
