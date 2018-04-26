@@ -21,7 +21,7 @@ The JSON file does follow a certain pattern of data converted from a fixed forma
     * Example from Windows shell:
     `python .\run_contact.py -i C:\Users\username\Documents\directory.csv`
     
-    > Updating directory with new csv: C:\Users\deank\Documents\SCC_2018_Spring_Directory.csv
+    > Updating directory with new csv: C:\Users\username\Documents\directory.csv
 
     > Enter first or last name to search (case sensitive) :
 
