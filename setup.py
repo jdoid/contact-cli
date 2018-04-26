@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
-setup(name='contacts_cli',
+setup(name='find_contact',
       version='0.2.0',
       description='Command line app for JSON contact list',
-      url='https://github.com/jdoid/contact-cli',
+      url='https://github.com/jdoid/find_contact',
       author='Dean Kirby',
       author_email='jdoid@fastmail.us',
       license='MIT',
