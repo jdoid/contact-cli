@@ -10,23 +10,24 @@ The JSON file does follow a certain pattern of data converted from a fixed forma
 
 ## Usage
 
-* Get distribution file and extract - 
+1. Get distribution file and extract - 
 
-* Change to 'contact' directory.
+2. Change to 'contact' directory.
 
-* First time, run with csv input file location
+3. First time, run with csv input file location
 
-    $ python run_contact.py -i <c:\path to\filename.csv>
+    `python run_contact.py -i <c:\path to\filename.csv>`
     
-    > Example from Windows shell: 
-    >\dist\contacts_cli-0.2.0\contact> python .\run_contact.py -i C:\Users\username\Documents\directory.csv
-    >Updating directory with new csv: C:\Users\deank\Documents\SCC_2018_Spring_Directory.csv
+    * Example from Windows shell:
+    `python .\run_contact.py -i C:\Users\username\Documents\directory.csv`
+    
+    > Updating directory with new csv: C:\Users\deank\Documents\SCC_2018_Spring_Directory.csv
 
-    >Enter first or last name to search (case sensitive) :
+    > Enter first or last name to search (case sensitive) :
 
-* Run without need to update csv file
+4. Run without need to update csv file
 
-    $ python run_contact.py
+    `python run_contact.py`
 
 ## License
 
