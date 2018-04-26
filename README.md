@@ -1,4 +1,4 @@
-# contact-cli
+# find_contact
 
 A command line program to search contact information from JSON.
 
@@ -10,27 +10,17 @@ The JSON file does follow a certain pattern of data converted from a fixed forma
 
 ## Usage
 
-Standalone: To run as standalone application - 
+* Get distribution file and extract - 
 
-* Extract contact-cli-master.zip
+* Change to 'contact' directory.
 
-* Change to root directory of the unzipped file.
+* First time, run with csv input file location
 
-* Optional: Replace data/directory.json with same named file that includes data of choice rather than test data. Include top level key "peoples".  See current directory.json.
+    $ python run_contact.py -i <c:\path to\filename.csv>
 
-* Run base script
+* Run without need to update csv file
 
     $ python run_contact.py
-
-LIB: If you've cloned this project, and want to install as a library run - 
-
-* Extract contact-cli-master.zip
-
-* Change to root directory of the unzipped file.
-
-* Run Python package manager
-
-    $ pip install .
 
 ## License
 
