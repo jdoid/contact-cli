@@ -31,4 +31,4 @@ The JSON file does follow a certain pattern of data converted from a fixed forma
 
 ## License
 
-contact-cli is provided under the MIT License.
+find_contact is provided under the MIT License.
