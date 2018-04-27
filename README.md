@@ -16,10 +16,10 @@ The JSON file does follow a certain pattern of data converted from a fixed forma
 
 3. First time, run with csv input file location
 
-    `python run_contact.py -i <c:\path to\filename.csv>`
+    `python main.py -i <c:\path to\filename.csv>`
     
     * Example from Windows shell:
-    `python .\run_contact.py -i C:\Users\username\Documents\directory.csv`
+    `python main.py -i C:\Users\username\Documents\directory.csv`
     
     > Updating directory with new csv: C:\Users\username\Documents\directory.csv
 
@@ -27,7 +27,7 @@ The JSON file does follow a certain pattern of data converted from a fixed forma
 
 4. Run without need to update csv file
 
-    `python run_contact.py`
+    `python main.py`
 
 ## License
 
