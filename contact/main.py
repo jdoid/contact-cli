@@ -3,7 +3,7 @@ import getopt
 from csv_to_json import CreateJson
 import search_name as search
 
-def main():
+def command_options():
     input_csv_file = ''
 
     # check for command line option of new csv file
@@ -28,5 +28,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    command_options()
     search.main()
